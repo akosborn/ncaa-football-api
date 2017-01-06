@@ -1,8 +1,10 @@
 package com.andrewosborn.Dao;
 
 import com.andrewosborn.Entity.Game;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.jdbc.core.JdbcTemplate;
 import org.springframework.jdbc.core.RowMapper;
+import org.springframework.stereotype.Repository;
 
 import java.sql.Date;
 import java.sql.ResultSet;
@@ -10,8 +12,10 @@ import java.sql.SQLException;
 import java.util.Collection;
 import java.util.List;
 
+@Repository
 public class MySQLGameDao
 {
+    @Autowired
     private JdbcTemplate jdbcTemplate;
 
     public static class GameRowMapper implements RowMapper<Game>
@@ -33,14 +37,14 @@ public class MySQLGameDao
         }
     }
 
-    /** public Collection<Game> getAllGames()
+    public Collection<Game> getAllGames()
     {
         final String statement = "SELECT game_id, quarter, away_team, home_team, away_score," +
                 "home_score, location, date FROM schedule";
         List<Game> gameList = jdbcTemplate.query(statement, new GameRowMapper());
 
         return gameList;
-    } */
+    }
 
     public Collection<Game> getGamesByDate(Date date)
     {

@@ -1,2 +1,6 @@
+com\andrewosborn\Entity\Game.class
+com\andrewosborn\Dao\MySQLGameDao$GameRowMapper.class
+com\andrewosborn\Dao\MySQLGameDao.class
+com\andrewosborn\Service\GameService.class
 com\andrewosborn\Main.class
-com\andrewosborn\Dao\GameDao.class
+com\andrewosborn\Controller\GameController.class
