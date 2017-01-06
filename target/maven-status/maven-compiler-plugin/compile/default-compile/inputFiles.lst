@@ -1,2 +1,5 @@
+C:\Users\andre\Dropbox\Coding\Java\Projects\ncaa-football-api\src\main\java\com\andrewosborn\Controller\GameController.java
 C:\Users\andre\Dropbox\Coding\Java\Projects\ncaa-football-api\src\main\java\com\andrewosborn\Main.java
-C:\Users\andre\Dropbox\Coding\Java\Projects\ncaa-football-api\src\main\java\com\andrewosborn\Dao\GameDao.java
+C:\Users\andre\Dropbox\Coding\Java\Projects\ncaa-football-api\src\main\java\com\andrewosborn\Dao\MySQLGameDao.java
+C:\Users\andre\Dropbox\Coding\Java\Projects\ncaa-football-api\src\main\java\com\andrewosborn\Service\GameService.java
+C:\Users\andre\Dropbox\Coding\Java\Projects\ncaa-football-api\src\main\java\com\andrewosborn\Entity\Game.java
