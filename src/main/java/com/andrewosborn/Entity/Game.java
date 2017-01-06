@@ -1,5 +1,7 @@
 package com.andrewosborn.Entity;
 
+import java.sql.Date;
+
 public class Game
 {
     private int id;
@@ -9,9 +11,10 @@ public class Game
     private int awayScore;
     private int homeScore;
     private String location;
+    private Date date;
 
     public Game(int id, String quarter, String awayTeam, String homeTeam,
-                int awayScore, int homeScore, String location)
+                int awayScore, int homeScore, String location, Date date)
     {
         this.id = id;
         this.quarter = quarter;
@@ -20,6 +23,7 @@ public class Game
         this.awayScore = awayScore;
         this.homeScore = homeScore;
         this.location = location;
+        this.date = date;
     }
 
     public Game() {}
@@ -92,5 +96,15 @@ public class Game
     public void setLocation(String location)
     {
         this.location = location;
+    }
+
+    public Date getDate()
+    {
+        return date;
+    }
+
+    public void setDate(Date date)
+    {
+        this.date = date;
     }
 }
