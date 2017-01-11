@@ -31,6 +31,9 @@ public class GameController
     @RequestMapping(value = "/teams/{team}", method = RequestMethod.GET)
     public Collection<Game> getGamesByTeamName(@PathVariable("team") String teamName)
     {
+        // Parse underscores
+        if (teamName.contains("_"))
+            teamName = teamName.replaceAll("_", " ");
         return gameService.getGamesByTeamName(teamName);
     }
 
